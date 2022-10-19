@@ -1,0 +1,191 @@
+* { margin: 0; padding: 0; list-style: none; }
+a:hover{color:#BDBDBD; }
+a { text-decoration:none;}
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+}
+
+
+
+.container{width: 1280px;margin: 0 auto;background: rgb(255, 255, 255,0.3);}
+
+
+.row{padding: 0 15px;}
+
+footer{border-top: 1px solid #bdbdbd;background: #000;}
+/*헤더 영역*/
+header{ background: #fff;}
+
+/*전체 로그인 메뉴*/
+header #all_login{
+    overflow: hidden;
+    border-bottom: 0px solid #acacac;
+}
+
+/*로그인 메뉴 만들기*/
+header #all_login #login{
+    float: right;height:35px;
+    border: 0px solid #CCC;
+	font-weight: bold;
+    color: #000;background:#fff;
+}
+
+/*전체 로그인 메뉴 속에 li*/
+header #all_login #login li{
+    float: left; padding: 0 10px; height: 30px;
+	font-size: 16px;
+    border: 0px solid #000;text-align: center;
+    line-height: 35px;cursor: pointer;    
+}
+
+/*로그인 메뉴에 마우스 오버시*/
+#all_login>#login>li:hover{color:#BDBDBD;}
+li .sign{color: #000;}
+li .sign:hover{color:#BDBDBD;}
+
+/*로고 만들기*/
+#logo{
+	background: #fff;
+    cursor: pointer;
+    margin: 0px auto;
+}
+
+#logo li
+{border: 0px solid #000;text-align: center;padding: 3%;}
+
+/*로고 그림 크기 지정 */
+#logo li img
+{width:25%;height:100%;}
+
+/*전체 탑 메뉴*/
+#all_top{
+    position: relative;
+    top:0;left: 0;
+    z-index: 100; 
+    font-size: 17px;
+    height: 50px;
+    background: #e57373 ;
+}
+
+/*탑메뉴 만들기*/
+#all_top>#top_m{
+    width: 80%; height: 50px;
+    text-align: center;line-height: 50px;
+	color: #fff;font-weight: bold;
+    margin-left: 14%;
+}
+
+
+/*탑 메뉴 속에 있는 메뉴들*/
+#all_top>#top_m>li{
+    float:left;
+    width:17.5%;height: 50px;
+	outline: 0px solid black;
+	cursor: pointer;
+}
+
+/*탑메뉴 속에 있는 서브메뉴*/
+#all_top>#top_m>li>ul{
+    width: 100%;height: 0px;
+    outline: 0px solid black;
+}
+#all_top>#top_m>li>ul:hover>li{transition: all 0.5s;}
+
+/*탑메뉴에 마우스 오버시 배경색상 글자색상 바꾸기*/
+
+#all_top>#top_m>li:hover{background:#0B3861;color: #fff;}
+
+/*서브메뉴 만들기*/
+#all_top>#top_m>li>ul>li
+{   font-size: 16px;
+    width:100%;height: 0px; border:0px solid black;
+    background: #fff;color: #000;visibility: hidden;
+}
+
+#all_top>#top_m>li>ul>li a{display: inline-block;}
+
+/*서브메뉴 마우스 오버시 배경색상 글자색상 바꾸기*/
+#all_top>#top_m>li>ul>li:hover{background: #0B3861;color: #fff;}
+
+/*서브메뉴에 마우스 오버시 높이값 150값 넣기 */
+#all_top>#top_m>li:hover>ul>li{visibility: visible; height: 50px;}
+
+
+.cate_nav{background: #f4f0f0;padding-top: 17px; border-bottom: 1px solid #f5f5f5;}
+.cate_nav .inner{width: 1084px; margin-left: auto; margin-right: auto;}
+.cate_nav .nav{font-size: 12px;
+
+}
+.cate_nav .nav ul{display: inline-block;margin-right: 67%;}
+.cate_nav .nav ul li{ float: left; outline: 0px solid rgb(95, 74, 74);}
+
+/*컨테이너 박스1 시작*/
+#container_box{width: 80%;height: 55px; border-bottom:1px solid black; margin:0px auto;background:#fff;}
+
+/*컨테이너박스에 이름 넣기*/
+#container_box>#container_name  {
+    width: 25%;height: 50px;
+    border: 3px solid darkred;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    background: #fff;
+    margin-top:1%;
+}
+
+
+#container_box>#container_name>div{
+    width:80%; height:40px;
+    border: 2px solid darkred;
+    border-top-left-radius:10px;border-top-right-radius:10px;
+	margin: 6px auto;
+}
+
+
+#container_box>#container_name>div>p{
+    text-align: center;line-height: 40px;
+    font-weight: bold;font-size: 20px;
+}
+
+/*콘텐츠1 div박스에 들어있는 그림*/
+/* #contents_at1_img{
+    width: 80%;height: 2000px;
+    outline: 0px solid black;
+    margin: 0 auto;text-align: center;
+    line-height: 1000px;
+    background:url(/img/event_img0.jpg)no-repeat
+    center center;background-size: 100% 100%;  
+} */
+
+/*그림 안에 들어있는 텍스트*/
+.img_wrap{width: 80%;margin: 10px auto; border: 1px solid #000;position: relative;}
+
+#contents_at1_img{
+    height:1000px;
+    background:url(/img/event_img0.jpg)no-repeat
+    center center; background-size: 100% 100%;} 
+
+#img_text{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    line-height: 70px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#img_text>p{
+    font-size: 20px;
+}
+
+/* 푸 터 */
+.footer-info{ text-align: center;padding: 30px 50px;color: #fff;font-weight: 500;
+    font-size: 15px;line-height: 1.625;}
+.footer-info li{ text-align: left; position: relative; display: inline;padding: 0 13px 0 20px; white-space: nowrap;}
+.footer-info li:before{content: "";width: 1px;height: 13px;position: absolute; top: 4px;left: 1px;background: rgba(255, 255, 255, 0.983);}
+
+.footer-info li:first-child:before{width: 0;}
+
+.footer-info address{margin-top: 20px; font-size: 13px; font-style: normal; display: block;}
+.footer-info address p{display: inline-block; }
+.footer-info .en{line-height: 2.2em; letter-spacing: -0.015em; font-family: SupremeLL, AppleSDGothicNeo, Apple SD Gothic Neo, Lato, helvetica, sans-serif;}
